@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Coffee Brewing</title>
+  <link href="css/final.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <div id="wrapper">
+    <h1>Home Coffee Brewing 101</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="brewing.html">Brewing Methods</a>
+      <a href="beans.html">Bean Selection</a>
+      <a href="equipment.html">Equipment Essentials</a>
+      <a href="step.html">Step-by-Step Guide</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+	  
+    <!-- Introduction Section -->
+    <section id="intro">
+      <h2>Welcome to Your Coffee Journey!</h2>
+      <p>This website is here to guide you through brewing techniques that you can master at home.</p>
+    </section>
+
+    <!-- Photo Section -->
+    <section id="photo-box">
+      <h2>Let's Make a Cup!</h2>
+      <p>Explore different coffee types, brewing equipment, and beans.</p>
+      <div class="photo-item">
+        <h3>Different Types of Coffee</h3>
+        <img src="img/homecoffee.png" alt="Different types of coffee">
+        <!-- Coffee List -->
+        <div class="coffee-list">
+          <h4>Click on a coffee type to learn more:</h4>
+          <ul>
+            <li class="coffee-item" id="americano">Americano</li>
+            <li class="coffee-item" id="latte">Latte</li>
+            <li class="coffee-item" id="cappuccino">Cappuccino</li>
+            <li class="coffee-item" id="chai">Chai Latte</li>
+          </ul>
+          <div id="description"></div>
+        </div>
+      </div>
+      <div class="photo-item">
+        <h3>Various Coffee Beans</h3>
+        <img src="img/homebeans.png" alt="Various coffee beans">
+      </div>
+      <div class="photo-item">
+        <h3>Different At-Home Brewing Equipment</h3>
+        <img src="img/homemachine.png" alt="At-home coffee brewing equipment">
+      </div>
+    </section>
+
+    <!-- Coffee Joke -->
+  
+    <h3>Why don’t coffee beans ever gossip?</h3>
+    <p>Hover over the image to find out!</p>
+    <div class="stepImage">
+      <img id="coffee" src="img/question.png" alt="Question mark">
+      <img id="coffee_hover" src="img/coffee.png" alt="Coffee cup">
+    </div>
+    <div id="answer"></div>
+
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      // Hover event to show and hide the joke
+      $("#coffee").hover(
+        function() {
+          $("#coffee").hide();
+          $("#coffee_hover").show();
+          $("#answer").html("<h2>Because they’re grounded!</h2>");
+        },
+        function() {
+          $("#coffee_hover").hide();
+          $("#coffee").show();
+          $("#answer").html("");
+        }
+      );
+
+      // Coffee descriptions
+      const coffeeDescriptions = {
+        americano: "Americano: Made with espresso and hot water.",
+        latte: "Latte: Made with espresso and steamed milk.",
+        cappuccino: "Cappuccino: Made with equal parts espresso, steamed milk, and foam.",
+        chai: "Chai Latte: Made with black tea, spices, and steamed milk."
+      };
+
+      // Event handler for coffee list clicks
+      $(".coffee-item").click(function() {
+        const coffeeId = $(this).attr("id");
+        $("#description").html("<p>" + coffeeDescriptions[coffeeId] + "</p>");
+        $(".coffee-item").css("color", ""); // Reset color for all items
+        $(this).css("color", "#8B4513"); // Change clicked item to dark brown (in-theme)
+      });
+    });
+  </script>
+
+</body>
+</html>
+

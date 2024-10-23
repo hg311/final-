@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    background-color: #F5F5DC; /* Cream background */
+    color: #4B3621; /* Brown text */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4 { 
+    text-align: center;
+    color: #8B4513; /* Darker brown for headers */
+    padding: 10px;
+    margin: 20px;
+}
+
+#wrapper {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center; /* Center content */
+}
+
+/* Section Box Styling */
+section {
+    background-color: #F8ECE0; /* Light beige background */
+    border: 2px solid #8B4513; /* Dark brown border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left; /* Align text inside sections to the left */
+}
+
+/* Photo Box Specific Styling */
+#photo-box {
+    text-align: center; /* Center text for photo section */
+}
+
+/* Photo Item Styling */
+.photo-item {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #8B4513; /* Dark brown border */
+}
+
+/* Coffee List Styling */
+.coffee-list {
+    font-size: 0.9em; /* Smaller font size */
+    margin-top: 10px;
+}
+
+.coffee-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.coffee-item {
+    cursor: pointer;
+    color: #4B3621;
+}
+
+#description {
+    margin-top: 10px;
+    font-size: 0.9em; /* Smaller font size for the description */
+    color: #4B3621;
+}
+
+/* Image Container and Styling for the Joke */
+.stepImage {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center;
+}
+
+.stepImage img {
+    width: 150px; /* Reduced image size */
+    height: 150px; /* Reduced image size */
+    border: 3px solid #8B4513; /* Dark brown border */
+    border-radius: 10px; /* Slightly rounded corners */
+    margin-bottom: 10px; /* Space between images */
+}
+
+/* Initially hide the second image (coffee.png) */
+#coffee_hover {
+    display: none;
+}
+
+#answer {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #4B3621; /* Brown color for text */
+}
+
+/* Navigation Links */
+nav a {
+    padding: 10px;
+    margin: 5px;
+    font-size: 125%;
+    background-color: #8B4513; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    font-size: 130%;
+    background-color: #4B3621;  
+    color: white; 
+}
+
+/* Brewing Method Styling */
+.brewing-method {
+    background-color: #F8ECE0; /* Light beige background */
+    border: 2px solid #8B4513; /* Dark brown border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+}
+
+.brewing-method h2 {
+    text-align: center;
+    color: #8B4513;
+}
+
+.method-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.method-content img {
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #8B4513;
+    margin-bottom: 10px;
+}
+
+.method-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.method-details h3 {
+    color: #8B4513;
+    margin-bottom: 10px;
+}
+
+.method-details ul {
+    margin-bottom: 10px;
+}
+
+/* General Styles */
+body {
+    background-color: #F5F5DC; /* Cream background */
+    color: #4B3621; /* Brown text */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4 { 
+    text-align: center;
+    color: #8B4513; /* Darker brown for headers */
+    padding: 10px;
+    margin: 20px;
+}
+
+#wrapper {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center; /* Center content */
+}
+
+/* Section Box Styling */
+section {
+    background-color: #F8ECE0; /* Light beige background */
+    border: 2px solid #8B4513; /* Dark brown border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left; /* Align text inside sections to the left */
+}
+
+/* Dropdown Styling */
+details {
+    background-color: #F8ECE0; /* Light beige background */
+    border: 2px solid #8B4513; /* Dark brown border */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+details summary {
+    background-color: #8B4513; /* Dark brown background for summary */
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+details[open] summary {
+    background-color: #4B3621; /* Darker brown when open */
+}
+
+details summary:hover {
+    background-color: #4B3621; /* Darker brown on hover */
+}
+
+.stepContent {
+    padding-top: 10px;
+    color: #4B3621;
+    font-size: 1em;
+}
+
+/* Warning Box Styling */
+.warning {
+    background-color: #8B4513;
+    color: #F5F5DC;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px auto;
+    width: 80%;
+}
+
+/* Navigation Links */
+nav a {
+    padding: 10px;
+    margin: 5px;
+    font-size: 125%;
+    background-color: #8B4513; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    font-size: 130%;
+    background-color: #4B3621;  
+    color: white; 
+}
+
+/* General Styles */
+body {
+    background-color: #F5F5DC; /* Cream background */
+    color: #4B3621; /* Brown text */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4 { 
+    text-align: center;
+    color: #8B4513; /* Darker brown for headers */
+    padding: 10px;
+    margin: 20px;
+}
+
+#wrapper {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center; /* Center content */
+}
+
+/* Equipment Item Styling */
+.equipment-item {
+    background-color: #F8ECE0; /* Light beige background */
+    border: 2px solid #8B4513; /* Dark brown border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left; /* Align text inside sections to the left */
+}
+
+/* Equipment Photo Styling */
+.equipment-photo {
+    width: 100%;
+    max-width: 300px; /* Same size scale as brewing.html */
+    border-radius: 10px;
+    border: 2px solid #8B4513;
+    display: block;
+    margin: 0 auto 15px auto; /* Center images with margin below */
+}
+
+/* Navigation Links */
+nav a {
+    padding: 10px;
+    margin: 5px;
+    font-size: 125%;
+    background-color: #8B4513; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    font-size: 130%;
+    background-color: #4B3621;  
+    color: white; 
+}
+
+/* Equipment Photo Styling */
+.equipment-photo {
+    width: 100%;
+    max-width: 300px; /* Same size scale as brewing.html */
+    border-radius: 10px;
+    border: 2px solid #8B4513;
+    display: block;
+    margin: 0 auto 15px auto; /* Center images with margin below */
+}
+
+/* Equipment Photo Styling */
+.equipment-photo {
+    width: 100%;
+    max-width: 300px; /* Consistent size for step-by-step guide */
+    border-radius: 10px;
+    border: 2px solid #8B4513;
+    display: block;
+    margin: 0 auto 15px auto; /* Center images with margin below */
+}
+
+/* Step-by-Step Guide Section Styling */
+.brewing-guide {
+    background-color: #F8ECE0; /* Light beige background */
+    border: 2px solid #8B4513; /* Dark brown border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
